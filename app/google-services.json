@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "656179968739",
+    "firebase_url": "https://dormmatch-31651-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "dormmatch-31651",
+    "storage_bucket": "dormmatch-31651.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656179968739:android:01431598c26b6eb73a23d6",
+        "android_client_info": {
+          "package_name": "com.example.dormmatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656179968739-4b4ejf9s6uf8t04dnk507lb6lunmjjjl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkOl4yftTZLJdCIr9F7Ao9JhIMWz-fuk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656179968739-4b4ejf9s6uf8t04dnk507lb6lunmjjjl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

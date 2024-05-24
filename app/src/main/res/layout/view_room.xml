@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ViewRoom">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            app:tint="@color/blue"/>
+
+        <TextView
+            android:id="@+id/roomTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/room_title"
+            android:textColor="@color/primaryColor"
+            android:gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/linearLayout1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/imagemA"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/roomTitle2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="10"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="24sp"
+                    android:text="@string/room_title"/>
+
+                <ImageButton
+                    android:id="@+id/favBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/baseline_favorite_border_24"
+                    app:tint="@color/fav"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/baseline_location_on_24"
+                    app:tint="@color/primaryColor"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Rua XPTO - Viana do Castelo"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/primaryColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="600 € / mês"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tipo: Arrendamento"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/Divider.Horizontal"
+                android:layout_margin="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/features"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/LlArCondicionado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:paddingVertical="5dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btAir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/blue"
+                            android:gravity="center"
+                            android:background="@drawable/rounded_icon_blue"
+                            app:icon="@drawable/baseline_wind_power_24"
+                            app:iconGravity="textStart"
+                            app:iconPadding="0dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/ar_condicionado"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="16sp"
+                            android:layout_marginStart="15dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LlWifi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:paddingVertical="5dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btWifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/blue"
+                            android:gravity="center"
+                            android:background="@drawable/rounded_icon_blue"
+                            app:icon="@drawable/baseline_wifi_24"
+                            app:iconGravity="textStart"
+                            app:iconPadding="0dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/wi_fi"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="16sp"
+                            android:layout_marginStart="15dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LlMaquinaLavar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:paddingVertical="5dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btWashMachine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/blue"
+                            android:gravity="center"
+                            android:background="@drawable/rounded_icon_blue"
+                            app:icon="@drawable/baseline_water_drop_24"
+                            app:iconGravity="textStart"
+                            app:iconPadding="0dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/maquina_lavar"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="16sp"
+                            android:layout_marginStart="15dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LlMobilia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:paddingVertical="5dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btMobilia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/blue"
+                            android:gravity="center"
+                            android:background="@drawable/rounded_icon_blue"
+                            app:icon="@drawable/baseline_bed_24"
+                            app:iconGravity="textStart"
+                            app:iconPadding="0dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/mobilia"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="16sp"
+                            android:layout_marginStart="15dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/Divider.Horizontal"
+                android:layout_margin="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descricao"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:layout_margin="10dp"
+                    android:text="Descriçao do Quarto"
+                    android:textColor="@color/primaryColor"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contacto"
+                    android:textSize="16dp"
+                    android:textColor="@color/primaryColor"/>
+
+                <TextView
+                    android:id="@+id/contacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="900000000"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center_vertical"
+                    android:textSize="14dp"
+                    android:textColor="@color/primaryColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="@string/call"
+                    android:backgroundTint="@color/primaryColor"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

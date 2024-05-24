@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        android:tint="@color/blue"
+        android:layout_marginVertical="30dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="btnReturn"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_language"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="30dp"
+        android:textSize="26dp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/rg_languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:paddingHorizontal="50dp">
+
+        <RadioButton
+            android:id="@+id/rb_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+            android:textColor="@color/blue"
+            android:buttonTint="@color/blue"/>
+
+        <RadioButton
+            android:id="@+id/rb_portuguese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/portuguese"
+            android:textColor="@color/blue"
+            android:buttonTint="@color/blue"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:onClick="saveChanges"/>
+
+</RelativeLayout>

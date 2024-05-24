@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Home">
+
+    <LinearLayout
+        android:id="@+id/Ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="@string/hello"
+            android:textColor="@color/primaryColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logout"
+            android:onClick="logout"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:gravity="center"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/baseline_logout_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/Ll1">
+
+        <LinearLayout
+            android:id="@+id/Ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Llsearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp">
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="11"
+                    android:textSize="15sp"
+                    android:hint="@string/search_hint"
+                    android:importantForAutofill="no"
+                    android:background="@drawable/bg_white_rounded"
+                    android:inputType="text"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSearch"
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/blue"
+                    android:layout_marginStart="15dp"
+                    app:icon="@drawable/ic_baseline_search"
+                    android:onClick="pesquisa"
+                    app:cornerRadius="10dp"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/category"
+                android:padding="10dp"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/Ll4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/baseline_house_24"
+                    android:backgroundTint="@color/blue"
+                    android:text="@string/house"
+                    android:layout_marginEnd="5dp"/>
+                <Button
+                    android:id="@+id/btnApart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTint="#FFFFFF"
+                    android:backgroundTint="@color/blue"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/baseline_apartment_24"
+                    android:text="@string/apart"
+                    android:layout_marginEnd="5dp"/>
+
+                <Button
+                    android:id="@+id/btnRoom"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/blue"
+                    android:drawableTop="@drawable/baseline_bedroom_parent_24"
+                    android:text="@string/room"
+                    android:layout_marginEnd="5dp"/>
+                <Button
+                    android:id="@+id/btnOthers"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/blue"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/baseline_other_houses_24"
+                    android:text="@string/other"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/announce"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <!-- Recycler View -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/announce_line"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/primaryColor"
+        app:tint="#FFFFFF"
+        android:src="@drawable/baseline_add_24"
+        android:layout_margin="16dp" />
+</RelativeLayout>

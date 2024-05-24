@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+
+
+    <TextView
+        android:id="@+id/perf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/configuracoes"
+        android:textColor="@color/blue"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="50dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perf"
+        android:orientation="horizontal"
+        android:paddingHorizontal="50dp"
+        android:layout_gravity="center_vertical">>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_person_24"
+            android:tint="@color/blue"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/perfs"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="25dp"
+            android:text="@string/perfil"
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/myButton"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/_icon__chevron_down_" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_2"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_location_on_24"
+            android:tint="@color/blue"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/trad"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/language"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_marginStart="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:src="@drawable/_icon__chevron_down_" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_3"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_lock_24"
+            android:tint="@color/blue"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/lock"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy"
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:src="@drawable/_icon__chevron_down_" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_4"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_apartment_24"
+            android:tint="@color/blue"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/annouce"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/announce"
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:src="@drawable/_icon__chevron_down_" />
+
+    </LinearLayout>
+
+</RelativeLayout>

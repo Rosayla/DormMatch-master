@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">DormMatch</string>
+    <string name="search_hint">Search...</string>
+    <string name="app_label" translatable="false" />
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="home">Home</string>
+    <string name="hello">Hello</string>
+    <string name="category">Category</string>
+    <string name="house">House</string>
+    <string name="apart">Apart.</string>
+    <string name="room">Room</string>
+    <string name="other">Others</string>
+    <string name="announce">Announcements</string>
+    <string name="favourite">Favourites</string>
+    <string name="map">Map</string>
+    <string name="settings">Settings</string>
+    <string name="room_title">Room Title</string>
+    <string name="features">Features</string>
+    <string name="wi_fi">Wi-Fi</string>
+    <string name="maquina_lavar">Washing Machine</string>
+    <string name="mobilia">Furniture</string>
+    <string name="descricao">Description:</string>
+    <string name="call">Contact</string>
+    <string name="contacto">Contact:</string>
+    <string name="ar_condicionado">Air Conditioning</string>
+    <string name="galeria">Gallery</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="recover_password">Recover Password</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="email">Email</string>
+    <string name="perfil">Profile</string>
+    <string name="configuracoes">Settings</string>
+    <string name="language">Language</string>
+    <string name="wrong_password">Wrong password</string>
+    <string name="wrong_email">Wrong email</string>
+    <string name="email_required">Email is required</string>
+    <string name="invalid_email">"Invalid email "</string>
+    <string name="password_required">Password is required</string>
+    <string name="password_min_length">The password must be at least 6 characters</string>
+    <string name="information">Information</string>
+    <string name="account_created">Account successfully created.</string>
+    <string name="username_required">Username is required</string>
+    <string name="favoritos">Favourites</string>
+    <string name="authentication_failed">Authentication failed.</string>
+    <string name="insertPhoneNumber">Please insert a phone number</string>
+    <string name="insertTitle">Please insert a title</string>
+    <string name="insertDescription">Please insert a description</string>
+    <string name="insertAddress">Please insert an address</string>
+    <string name="selectOp">Please select a type</string>
+    <string name="propriedadeRegistada">Announcement successfully created</string>
+    <string name="registerFail">Could not register the announcement</string>
+
+
+    <string-array name="category">
+        <item>Apartamento</item>
+        <item>Casa</item>
+        <item>Outros</item>
+        <item>Quarto</item>
+    </string-array>
+    <string name="privacy">Privacy and Sharing</string>
+    <string name="create_announcement">Create Announcement</string>
+    <string name="title">Title</string>
+    <string name="location">Location</string>
+    <string name="price">Price</string>
+    <string name="type">Type</string>
+    <string name="selling">For Sale</string>
+    <string name="rent">Rent</string>
+    <string name="image">Image</string>
+    <string name="select_files">Select Files</string>
+    <string name="create">Create</string>
+    <string name="go_back">Return</string>
+    <string name="change_language">Change Language</string>
+    <string name="english">English</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="save">Save Changes</string>
+</resources>
