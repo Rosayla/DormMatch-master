@@ -18,7 +18,7 @@
         android:enableOnBackInvokedCallback="true">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyA7hMvJjx2m5yeAWBJ6ra-LLIKPEU6fPtU"/>
+            android:value="YOUR_API_KEY"/>  //API_KEY
         <activity
             android:name=".MenuActivity"
             android:exported="false"
